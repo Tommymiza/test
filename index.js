@@ -25,4 +25,6 @@ app.get("/test-1", (req, res) => {
   res.send("Hello Test-1!");
 });
 
-module.exports = app;
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server started on port ${process.env.PORT || 3000}`);
+});
