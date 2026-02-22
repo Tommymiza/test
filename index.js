@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+process.on("uncaughtException", console.error);
+process.on("unhandledRejection", console.error);
 
 dotenv.config();
 
