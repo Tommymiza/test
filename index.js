@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api", (req, res) => {
+  console.log("test apiiiii");
   res.send("Hello Api!");
 });
 
