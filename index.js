@@ -20,6 +20,11 @@ app.get("/api", (req, res) => {
   res.send("Hello Api!");
 });
 
+app.get("/test-1", (req, res) => {
+  console.log("test test-1");
+  res.send("Hello Test-1!");
+});
+
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server started on port ${process.env.PORT || 3000}`);
 });
